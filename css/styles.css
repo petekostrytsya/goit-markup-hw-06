@@ -514,6 +514,15 @@ img {
 
 /* ==================== MODAL FORM ================== */
 
+.form-desc {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #2E2F42;
+}
+
 .modal-form {
     display: flex;
     flex-direction: column;
@@ -533,6 +542,7 @@ img {
     top: 50%;
     left: 19px;
     transform: translate(0, -50%);
+    transition: fill var(--transition-dur-and-func);
 }
 
 .modal-form-input:focus {
@@ -540,7 +550,9 @@ img {
     border-color: #4D5AE5;
 }
 
-.modal-form-input:focus
+.modal-form-input:focus + .modal-form-input-icon {
+    fill: #4D5AE5;
+}
 
 .modal-form-input {
     width: 100%;
@@ -548,6 +560,7 @@ img {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     padding-left: 34px;
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-form-input-desc {
@@ -559,6 +572,75 @@ img {
     color: #8E8F99;
 
 }
+
+.modal-form-message:focus {
+    outline: none;
+    border-color: #4D5AE5;
+}
+
+.modal-form-message {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-check-desc::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1.25px solid #2E2F42;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+    background-image: url(../images/click-polisy.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-form-check-desc {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #757575;
+    margin-bottom: 24px;
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+}
+
+.modal-form-submit {
+    width: 170px;
+    height: 51px;
+    align-self: center;
+    padding: 16px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+}
+
 
 
 /* ==================== /MODAL FORM ================== */
