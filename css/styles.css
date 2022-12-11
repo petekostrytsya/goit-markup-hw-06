@@ -429,6 +429,7 @@ img {
 
 .footer-social-media {
     display: block;
+    margin-right: 80px;
     
 }
 
@@ -451,6 +452,59 @@ img {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-dur-and-func);
+}
+
+.footer-form {
+    display: flex;
+}
+
+.modal-form-input-footer {
+    width: 264px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: var(--accent-color);
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-input-footer:hover,
+.modal-form-input-footer:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+    color: #ffffff;
+}
+
+.modal-form-submit-footer {
+    margin-left: 24px;
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    width: 168px;
+    height: 40px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+}
+
+.modal-form-submit-footer:hover,
+.modal-form-submit-footer:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
 }
 /* ======================/FOOTER===================== */
 
