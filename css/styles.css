@@ -370,7 +370,7 @@ img {
 
 .work-examples {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
@@ -388,7 +388,7 @@ img {
 
 .employees {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
@@ -840,6 +840,15 @@ img {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+}
+
+.img-portfolio {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-list {
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .link-works:hover,
